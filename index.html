@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PrepStack offers practical Java tutorials, SQL interview questions, coding practice, and beginner-friendly interview preparation for software developer freshers.">
+  <meta name="theme-color" content="#101b35">
+  <title>PrepStack — Code. Practice. Get Interview-Ready.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="PrepStack home">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>Prep<span>Stack</span><small>CODE. PRACTICE. GROW.</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#resources">Resources</a>
+        <a href="#quiz">Quick quiz</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#newsletter">Get updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR DEVELOPER JOURNEY STARTS HERE</p>
+          <h1>Your next opportunity starts with <span>practice.</span></h1>
+          <p class="hero-lede">Practical Java tutorials, SQL interview questions, and coding exercises to help you prepare for your first software development job.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#resources">Explore resources <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#quiz">Try a quick quiz</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>J</span><span>S</span><span>{ }</span></div>
+            <p><strong>Learn one concept at a time.</strong><br><span>Beginner-friendly. Practical. Focused.</span></p>
+          </div>
+        </div>
+        <div class="hero-code" aria-label="Example Java code">
+          <div class="code-top"><div class="window-dots"><i></i><i></i><i></i></div><span>InterviewReady.java</span><span class="code-status">● LIVE</span></div>
+          <pre><code><span class="code-purple">public class</span> <span class="code-yellow">Practice</span> {
+  <span class="code-purple">public static void</span> main(
+      <span class="code-blue">String</span>[] args) {
+    <span class="code-blue">int</span> progress = <span class="code-green">1</span>;
+
+    <span class="code-purple">while</span> (progress &lt;= <span class="code-green">100</span>) {
+      learn();
+      progress++;
+    }
+
+    <span class="code-yellow">System</span>.out.println(
+      <span class="code-green">"Keep going!"</span>);
+  }
+}</code></pre>
+          <div class="code-bottom"><span><b></b> Java practice mode</span><span>01 / 04</span></div>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="stats-strip" aria-label="What you can learn">
+      <div class="container stats-grid">
+        <div><strong>Java</strong><span>Core concepts</span></div>
+        <div><strong>SQL</strong><span>Queries & databases</span></div>
+        <div><strong>DSA</strong><span>Problem-solving</span></div>
+        <div><strong>Interviews</strong><span>Fresher preparation</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="resources">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LEARNING LIBRARY</p>
+          <h2>Build skills that <span>stick.</span></h2>
+          <p class="section-intro">Choose a topic, explore a guide, and practise what you learn.</p>
+        </div>
+        <span class="resource-count" id="resourceCount">6 resources</span>
+      </div>
+      <div class="resource-tools">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" id="searchInput" placeholder="Search Java, SQL, OOP..." aria-label="Search resources">
+        </label>
+        <div class="filter-list" role="group" aria-label="Filter resources">
+          <button class="filter-btn active" data-filter="All">All resources</button>
+          <button class="filter-btn" data-filter="Java">Java</button>
+          <button class="filter-btn" data-filter="SQL">SQL</button>
+          <button class="filter-btn" data-filter="Coding">Coding</button>
+          <button class="filter-btn" data-filter="Career">Career</button>
+        </div>
+      </div>
+      <div class="resource-grid" id="resourceGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No matching resources yet. Try another keyword or category.</p>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="container quiz-layout">
+        <div>
+          <p class="eyebrow">CHECK YOUR KNOWLEDGE</p>
+          <h2>Small steps.<br><span>Stronger skills.</span></h2>
+          <p class="section-intro">Take this quick Java question. Read the explanation after you answer, then keep practising.</p>
+          <div class="quiz-note"><span class="quiz-note-icon">✓</span><span>No sign-up. No pressure. Just practice.</span></div>
+        </div>
+        <div class="quiz-card" id="quizCard">
+          <div class="quiz-card-top"><span class="quiz-label">JAVA QUICK QUIZ</span><span class="quiz-number">QUESTION 01</span></div>
+          <h3>Which keyword is used when one Java class inherits from another class?</h3>
+          <div class="quiz-options" id="quizOptions">
+            <button class="quiz-option" data-answer="implements"><span>A</span> implements</button>
+            <button class="quiz-option" data-answer="extends"><span>B</span> extends</button>
+            <button class="quiz-option" data-answer="inherits"><span>C</span> inherits</button>
+            <button class="quiz-option" data-answer="instanceof"><span>D</span> instanceof</button>
+          </div>
+          <div class="quiz-feedback" id="quizFeedback" role="status" hidden></div>
+          <button class="button button-primary quiz-retry" id="quizRetry" hidden>Try again</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section container" id="about">
+      <div class="about-icon" aria-hidden="true">&lt;PS/&gt;</div>
+      <div class="about-copy">
+        <p class="eyebrow">WHY PREPSTACK?</p>
+        <h2>Made for learners who are <span>getting started.</span></h2>
+        <p>PrepStack is a growing learning resource for students and freshers who want clear explanations, working examples, and practical interview preparation—without unnecessary complexity.</p>
+        <p>We're starting with Java and SQL, then expanding into coding patterns, web development, and project guidance.</p>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="container newsletter-wrap">
+        <div>
+          <p class="eyebrow">STAY IN THE LOOP</p>
+          <h2>Keep learning, <span>one step at a time.</span></h2>
+          <p>Want to hear about new guides and practice resources? Leave a reminder for yourself to check back—or connect an email service later.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="emailInput">Email address</label>
+          <div class="email-row">
+            <input type="email" id="emailInput" placeholder="you@example.com" required>
+            <button class="button button-primary" type="submit">Notify me</button>
+          </div>
+          <p class="form-note" id="formNote">Demo form only: no email is collected or sent yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Prep<span>Stack</span><small>CODE. PRACTICE. GROW.</small></span></a>
+      <p>Helping freshers build confidence, one concept at a time.</p>
+      <div class="footer-links"><a href="#resources">Resources</a><a href="#about">About</a><a href="mailto:hello@example.com" title="Replace with your contact email">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> PrepStack. Learning starts here.</span><span>Built with HTML, CSS & JavaScript.</span></div>
+  </footer>
+
+  <dialog class="article-dialog" id="articleDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><button class="dialog-close" id="dialogClose" aria-label="Close article">×</button></div>
+    <div class="dialog-content" id="dialogContent"></div>
+  </dialog>
+</body>
+</html>
